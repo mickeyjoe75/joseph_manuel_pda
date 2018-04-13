@@ -20,13 +20,13 @@ class CardGame
     end
   end
 
-  dif highest_card(card1 card2)
+  dif highest_card(card1 card2) - #- Typo dif rather than def
   if card1.value > card2.value
     return card.name
   else
     card2
   end
-end
+end- #extra key word end.
 end
 
 def self.cards_total(cards)
