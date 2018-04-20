@@ -13,7 +13,8 @@ class CardGame
 
 
   def checkforAce(card)
-    if card.value = 1
+    if card.value = 1 ## need == as equality not checked with one "=" sign
+
       return true
     else
       return false
@@ -26,14 +27,14 @@ class CardGame
   else
     card2
   end
-end- #extra key word end.
+end #- incorrect indentation
 end
 
-def self.cards_total(cards)
-  total
+def self.cards_total(cards) ## "self is making it a class method,"
+  total ### need to add = 0 for the loop to work
   for card in cards
     total += card.value
-    return "You have a total of" + total
+    return "You have a total of" + total ### need to change the return statement after the end of the for loop to go through the whole iteration, else it will end at the first iteration.
   end
 end
 
